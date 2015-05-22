@@ -1,0 +1,26 @@
+<% provide(:title, 'Контакты') %>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>АвтоСервис69 | <%= yield(:title) %></title>
+  </head>
+  <body>
+        <h1 style="margin-bottom:25px">Контактная информация</h1>
+        <div style="position:relative;">
+          <div id="address">
+            <%= image_tag("service1.png", style:"width:50%", alt: "AutoService69") %>
+            <h3>пгт. Редкино, ул. Геофизиков<br>Конаковский район, Тверская область</h3>
+             <h3 style="font-size:2.9em;line-height:1.5;font-family:'violet'">
+                    +7 (904) 354-65-32<br>
+                    +7 (903) 630-95-08
+            </h3>
+          </div>
+          <div id='map' class="maps"></div>
+        </div>
+        <div id="map_footer">
+            Предварительно позвонив по телефону, вы всегда можете подъехать к нам<br>
+            Возможен выезд специалистов к месту нахождения вашего авто
+        </div>
+  </body>
+ 
+</html>

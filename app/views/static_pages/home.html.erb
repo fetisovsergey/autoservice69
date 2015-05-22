@@ -1,0 +1,61 @@
+<% provide(:title, 'Главная страница') %>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>АвтоСервис69 | <%= yield(:title) %></title>
+</head>
+
+<body>
+<h1><%= image_tag("service1.png", alt: "AutoService69") %></h1><br>
+
+<div class="plus">
+  Мы занимаемся установкой дополнительного оборудования на автомобили различных производителей.<br>
+  Почему вам следует выбрать нас:<br>
+ </div>
+<div class="usluga">
+    Наши специалисты осуществляют диагностику и авторемонт, с учетом особенностей каждой марки
+</div>
+<div class="usluga" style="border-top:5px solid #000000;border-bottom:5px solid #000000">
+    Мы постарались сделать установку дополнительного оборудования максимально выгодной для вас
+</div>
+<div class="usluga">
+    Если вы хотите получить качественный ремонт автомобиля за разумные деньги, воспользуйтесь нашими услугами!
+</div>
+<br>
+<h1 style="background:rgba(0,0,0,0.6);padding:20px;">Спектр предоставляемых услуг</h1>
+    <div id="cameras" class="skill" style="margin:0">
+        <div style="position:absolute;left:50%;width:50%">
+          <%= image_tag("camera.png", class: "image", alt: "Camera") %> <br>Установка камер переднего и заднего вида
+        </div>
+        <div style="width:50%">
+          <%= image_tag("parktronic.png", class: "image", alt: "Parktronic") %> <br>Установка датчиков переднего и заднего парктроника
+        </div>
+ 	  </div>
+    <div id="parktronic" class="skill">
+      <%= image_tag("shield.png", class: "image", alt: "GuardSystems") %> <br>Установка охранных и противоугонных систем
+    </div>
+    <div id="service" class="skill">
+        <div style="position:absolute;left:50%;width:50%">
+         <%= image_tag("service.png", class: "image", alt: "Multimedia") %> <br>Ремонт электропроводки
+        </div>
+        <div style="width:50%">
+         <%= image_tag("multimedia.jpg", class: "image",  alt: "Multimedia") %> <br>Установка мультимедийных систем и автомагнитол
+        </div>
+ 	  </div>
+
+<div style="position:relative;">
+          <div id="address">
+            <%= image_tag("service1.png", style:"width:50%", alt: "AutoService69") %>
+            <h3>пгт. Редкино, ул. Геофизиков<br>Конаковский район, Тверская область</h3>
+             <h3 style="font-size:2.9em;line-height:1.5;font-family:'violet'">
+                    +7 (904) 354-65-32<br>
+                    +7 (903) 630-95-08
+            </h3>
+          </div>
+        <div id='map' class="maps"></div>
+</div>
+<div id="map_footer">
+    Предварительно позвонив по телефону, вы всегда можете подъехать к нам<br>
+    Возможен выезд специалистов к месту нахождения вашего авто
+</div>
+</body>

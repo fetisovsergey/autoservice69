@@ -1,0 +1,25 @@
+<% provide(:title, 'Услуги') %>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>АвтоСервис69 | <%= yield(:title) %></title>
+  </head>
+  <body>
+    <h1>Спектр предоставляемых услуг</h1>
+    <div id="parktronic" class="skill">
+    	<%= image_tag("parktronic.png", class: "image", alt: "Parktronic") %> <br> Установка датчиков переднего и заднего парктроника
+ 	  </div>
+     <div id="cameras" class="skill">
+         <%= image_tag("camera.png", class: "image", alt: "Camera") %> <br> Установка камер переднего и заднего вида
+ 	   </div>
+     <div id="guard" class="skill">
+         <%= image_tag("shield.png", class: "image", alt: "GuardSystems") %> <br> Установка охранных и противоугонных систем
+ 	 </div>
+     <div id="multimedia" class="skill">
+         <%= image_tag("multimedia.jpg", class: "image", alt: "Multimedia") %> <br> Установка мультимедийных систем и автомагнитол
+ 	 </div>
+     <div id="service" class="skill">
+         <%= image_tag("service.png",class: "image", alt: "Multimedia") %> <br> Ремонт электропроводки</h4>
+ 	 </div>
+  </body>
+</html>
